@@ -1,0 +1,4 @@
+config BR2_PACKAGE_AESD_CHAR
+	bool "aesd-char"
+	help
+        aesd educational char device driver

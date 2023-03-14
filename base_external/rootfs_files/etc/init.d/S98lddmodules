@@ -5,11 +5,14 @@ if [ "start" == "$1" ]; then
 	start-stop-daemon -S -n init -a /bin/scull_load
 	start-stop-daemon -S -n init -a /bin/module_load -- faulty
 	start-stop-daemon -S -n init -a /sbin/modprobe -- hello
+	start-stop-daemon -S -n init -a /bin/aesdchar_load
 else
 	echo "Removing kernel modules"
 	start-stop-daemon -K -n scull_load
 	start-stop-daemon -K -n module_load
+	start-stop-daemon -K -n aesdchar_load
 	start-stop-daemon -S -n init -a /bin/scull_unload
 	start-stop-daemon -S -n init -a /bin/module_unload -- faulty
 	start-stop-daemon -S -n init -a /sbin/rmmod -- hello
+	start-stop-daemon -S -n init -a /bin/aesdchar_unload
 fi
