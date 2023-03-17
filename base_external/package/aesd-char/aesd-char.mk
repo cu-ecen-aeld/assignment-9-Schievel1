@@ -4,7 +4,7 @@
 #
 ##############################################################
 
-AESD_CHAR_VERSION = '7732911f4a90f834acd9d7ab8e491f6effefd422'
+AESD_CHAR_VERSION = 'df66dc24e53530b6921e023705a7b0df604a9c39'
 
 AESD_CHAR_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-Schievel1.git'
 AESD_CHAR_SITE_METHOD = git
