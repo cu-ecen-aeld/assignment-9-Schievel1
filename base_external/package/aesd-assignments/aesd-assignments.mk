@@ -6,13 +6,14 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '7732911f4a90f834acd9d7ab8e491f6effefd422'
+AESD_ASSIGNMENTS_VERSION = 'df66dc24e53530b6921e023705a7b0df604a9c39'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-Schievel1.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
+
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	CROSS_COMPILE="aarch64-buildroot-linux-uclibc-" $(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app default
